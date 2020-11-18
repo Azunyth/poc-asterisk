@@ -1,5 +1,5 @@
 # append the most voip library location to the pythonpath
-import sys, time
+import sys, time, getopt, os
 sys.path.append("./most-voip/python/src/")
 
 # import the Voip Library
