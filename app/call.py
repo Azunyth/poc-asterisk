@@ -45,6 +45,7 @@ def notify_events(voip_event_type, voip_event, params):
             my_voip.make_call(extension)
     elif (voip_event in [VoipEvent.CALL_REMOTE_DISCONNECTION_HANGUP, VoipEvent.CALL_REMOTE_HANGUP, VoipEvent.CALL_HANGUP]):
         print "Call terminated"
+        my_voip.destroy_lib()
         sys.exit(0)
 
 # initialize the lib passing the dictionary and the callback method defined above:
