@@ -311,5 +311,5 @@ Firstly, clone this repository. This project is based on [most-voip](https://git
 cd ~/Documents/
 git clone https://github.com/Azunyth/poc-asterisk client-test
 cd client-test
-python app\call.py -e 100 -c 301
+python app\call.py -e 100 -c bob
 ```
